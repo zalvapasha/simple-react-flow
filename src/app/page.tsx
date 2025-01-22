@@ -1,12 +1,5 @@
 "use client";
-import {
-  ReactFlow,
-  Controls,
-  Background,
-  Handle,
-  Node,
-  Edge,
-} from "@xyflow/react";
+import { ReactFlow, Controls, Background, Node, Edge } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 
 const edges: Edge[] = [
@@ -25,7 +18,6 @@ const edges: Edge[] = [
     animated: true,
     label: "End to Process",
   },
-  // New edge for branching
   {
     id: "3-5",
     source: "3",
@@ -99,7 +91,6 @@ const nodes: Node[] = [
       boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
     },
   },
-  // New node after the transition node
   {
     id: "5",
     data: {
